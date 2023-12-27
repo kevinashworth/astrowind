@@ -110,18 +110,18 @@ export const headerData = {
         },
       ],
     },
-    {
-      text: 'Widgets',
-      href: '#',
-    },
+    // {
+    //   text: 'Widgets',
+    //   href: '#',
+    // },
   ],
   actions: [{ text: 'Download', href: 'https://github.com/onwidget/astrowind', target: '_blank' }],
 };
-
+const currentYear = new Date().getFullYear();
 export const footerData = {
   links: [
     {
-      title: 'Product',
+      title: 'A',
       links: [
         { text: 'Features', href: '#' },
         { text: 'Security', href: '#' },
@@ -133,7 +133,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Platform',
+      title: 'B',
       links: [
         { text: 'Developer API', href: '#' },
         { text: 'Partners', href: '#' },
@@ -143,7 +143,7 @@ export const footerData = {
       ],
     },
     {
-      title: 'Support',
+      title: 'C',
       links: [
         { text: 'Docs', href: '#' },
         { text: 'Community Forum', href: '#' },
@@ -152,32 +152,33 @@ export const footerData = {
         { text: 'Status', href: '#' },
       ],
     },
-    {
-      title: 'Company',
-      links: [
-        { text: 'About', href: '#' },
-        { text: 'Blog', href: '#' },
-        { text: 'Careers', href: '#' },
-        { text: 'Press', href: '#' },
-        { text: 'Inclusion', href: '#' },
-        { text: 'Social Impact', href: '#' },
-        { text: 'Shop', href: '#' },
-      ],
-    },
+    // {
+    //   title: 'Company',
+    //   links: [
+    //     { text: 'About', href: '#' },
+    //     { text: 'Blog', href: '#' },
+    //     { text: 'Careers', href: '#' },
+    //     { text: 'Press', href: '#' },
+    //     { text: 'Inclusion', href: '#' },
+    //     { text: 'Social Impact', href: '#' },
+    //     { text: 'Shop', href: '#' },
+    //   ],
+    // },
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },
     { text: 'Privacy Policy', href: getPermalink('/privacy') },
   ],
   socialLinks: [
-    { ariaLabel: 'X', icon: 'tabler:brand-x', href: '#' },
-    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: '#' },
-    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: '#' },
-    { ariaLabel: 'RSS', icon: 'tabler:rss', href: getAsset('/rss.xml') },
-    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/onwidget/astrowind' },
+    { ariaLabel: 'Facebook', icon: 'tabler:brand-facebook', href: 'https://facebook.com/kevinashworth' },
+    { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/kevinashworth' },
+    { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/iamkevinashworth/' },
+    { ariaLabel: 'LinkedIn', icon: 'tabler:brand-linkedin', href: 'https://www.linkedin.com/in/amkevinashworth/' },
+    { ariaLabel: 'Mastodon', icon: 'tabler:brand-mastodon', href: 'https://toot.community/@kevinashworth' },
+    { ariaLabel: 'Threads', icon: 'tabler:brand-threads', href: 'https://www.threads.net/@iamkevinashworth' },
+    { ariaLabel: 'Twitter', icon: 'tabler:brand-twitter', href: 'https://twitter.com/kevinashworth' },
   ],
   footNote: `
-    <span class="w-5 h-5 md:w-6 md:h-6 md:-mt-0.5 bg-cover mr-1.5 rtl:mr-0 rtl:ml-1.5 float-left rtl:float-right rounded-sm bg-[url(https://onwidget.com/favicon/favicon-32x32.png)]"></span>
-    Made by <a class="text-blue-600 hover:underline dark:text-gray-200" href="https://onwidget.com/"> onWidget</a> · All rights reserved.
+    &copy; ${currentYear} Kevin Ashworth
   `,
 };
