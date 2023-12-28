@@ -16,7 +16,7 @@ const metadata = {
 ---
 
 <Layout metadata={metadata}>
-  <Fragment slot="announcement"></Fragment>
+  <Fragment slot="announcement">Announcing</Fragment>
   <Fragment slot="header">
     <Header
       links={[
@@ -25,11 +25,11 @@ const metadata = {
         { text: 'Resume', href: '#resume' },
         { text: 'Porfolio', href: '#porfolio' },
         { text: 'Blog', href: '#blog' },
-        { text: 'Github', href: 'https://github.com/onwidget' },
+        { text: 'Github', href: 'https://github.com/kevinashworth' },
       ]}
       actions={[
         {
-          text: 'Hire me',
+          text: 'Action #1 Goes Here',
           href: '#',
         },
       ]}
@@ -42,14 +42,13 @@ const metadata = {
 
   <Hero
     id="hero"
-    title="Sarah Johnson"
-    tagline="Personal Web Demo"
-    actions={[{ variant: "primary", target: '_blank', text: 'Hire me', href: '/' }]}
+    title="Kevin Ashworth"
+    tagline="Front-end Developer, Actor, Acting Teacher"
+    actions={[{ variant: "primary", target: '_blank', text: 'Button text goes here', href: '/' }]}
   >
     <Fragment slot="subtitle">
-      I'm a Graphic Designer passionate about crafting visual stories. <br /> With 5 years of experience and a degree
-      from New York University's School of Design. I infuse vitality into brands and designs, transforming concepts into
-      captivating realities.
+      I'm a Front-end Developer, Actor, Acting Teacher, lving in Los Angeles.<br />
+      lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     </Fragment>
   </Hero>
 
